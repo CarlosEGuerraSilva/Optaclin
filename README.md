@@ -1,6 +1,6 @@
 # Optaclin
 UNAMxHacks
-Debido a las inconveniencias con la luz eñ primer día del evento, el proyecto se dividió el proyecto en 2 partes.
+Debido a las inconveniencias con la luz el primer día del evento, el proyecto se dividió el proyecto en 2 partes.
 La carpeta llamada "Optaclin" es la parte encargada de los datos, base de datos, etc, es la APLICACIÓN PRINCIPAL
 La carpeta llamada "Diagnostico Paciente" es la parte encargada de realizar las simulaciones de vista y de generar las imagenes para deteccion de eventos finales
 No tuvimos tiempo de juntar los dos proyectos así que si al dar clic en el botón "Test visual" puede ocurrirá un error de "Ejecutable no encontrado"
