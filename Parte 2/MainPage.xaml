@@ -1,0 +1,17 @@
+﻿<Page x:Class="Diagnostico_Paciente.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Diagnostico_Paciente"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Página principal">
+
+    <Grid>
+        <TextBlock x:Name="Seleccione_una_opción" Margin="10,10,10,0" TextWrapping="Wrap" Text="Seleccione una opción" VerticalAlignment="Top" Foreground="#FF111111" FontWeight="Bold" FontSize="36" TextAlignment="Center"/>
+        <Button x:Name="DaltoExn" Content="Examen de daltonismo" HorizontalAlignment="Center" Height="108.334" Margin="0,-116,0,0" VerticalAlignment="Center" Width="442.898" Background="#FF181818" BorderBrush="#FF181818" Foreground="White" FontWeight="Bold" FontSize="24" Style="{DynamicResource SimpleBlackButtons}"/>
+        <Button x:Name="Padec" Content="Simulación de padecimientos visuales" HorizontalAlignment="Center" Height="108.334" Margin="178.55,247.357,178.551,94.309" VerticalAlignment="Center" Width="442.899" Background="#FF181818" BorderBrush="#FF181818" Foreground="White" FontWeight="Bold" FontSize="24" Style="{DynamicResource SimpleBlackButtons}"/>
+
+    </Grid>
+</Page>

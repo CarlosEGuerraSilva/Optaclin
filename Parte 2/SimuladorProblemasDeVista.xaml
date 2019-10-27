@@ -1,0 +1,63 @@
+﻿<Page x:Class="Diagnostico_Paciente.SimuladorProblemasDeVista"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Diagnostico_Paciente"
+      mc:Ignorable="d" 
+      d:DesignHeight="624.872" d:DesignWidth="1210.348"
+      Title="Problemas de vista">
+
+    <Grid>
+        <Grid HorizontalAlignment="Left" Width="322.333" Background="Black">
+            <ComboBox x:Name="CBTipoVista" HorizontalAlignment="Left" Height="52.8" Margin="10,73.4,0,0" VerticalAlignment="Top" Width="302.333" SelectedIndex="0" FontSize="30" DropDownClosed="CBTipoVista_DropDownClosed" BorderBrush="#FF0072CE" Foreground="White" Style="{DynamicResource BlackComboBox}" Background="Black"/>
+            <TextBlock Height="58.4" Margin="10,10,10,0" TextWrapping="Wrap" Text="Tipo de vista" VerticalAlignment="Top" Foreground="White" FontSize="36" TextAlignment="Center"/>
+            <TextBlock Height="58.4" Margin="10,146.8,10,0" TextWrapping="Wrap" Text="Dispositivo" VerticalAlignment="Top" Foreground="White" FontSize="36" TextAlignment="Center"/>
+            <ComboBox x:Name="CBDispositivos" HorizontalAlignment="Left" Height="52.8" Margin="10,210.2,0,0" VerticalAlignment="Top" Width="302.333" SelectedIndex="0" FontSize="30" Style="{DynamicResource BlackComboBox}" Background="Black" BorderBrush="#FF0072CE" Foreground="White"/>
+            <Button x:Name="Start" Content="Empezar simulación" HorizontalAlignment="Left" Height="56.4" Margin="10,302.1,0,0" VerticalAlignment="Top" Width="302.333" FontSize="18" Click="Start_Click" Style="{DynamicResource SimpleBlackButtons}" Background="#FF0C0C0C" Foreground="White"/>
+        </Grid>
+        <Grid Background="White" Margin="322.333,0,0,0">
+            <Grid Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image x:Name="ImageCapture" Margin="0" Stretch="UniformToFill" Width="600" Height="500"/>
+                <Rectangle x:Name="GlaucomaSimulator" Opacity="0.785">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Resources/ImgSimulación/BlurGlaucoma.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Grid x:Name="GridRetinopatia" Background="#06000000" Visibility="Hidden">
+                    <Ellipse Margin="39.46,43.764,436.94,350.636" Fill="Black" Opacity="0.655">
+                        <Ellipse.Effect>
+                            <BlurEffect Radius="99"/>
+                        </Ellipse.Effect>
+                    </Ellipse>
+                    <Ellipse Margin="514.4,396.564,10,27.836" Fill="Black" Opacity="0.655">
+                        <Ellipse.Effect>
+                            <BlurEffect Radius="99"/>
+                        </Ellipse.Effect>
+                    </Ellipse>
+                    <Ellipse Margin="10,446.8,418.4,10" Fill="Black" Opacity="0.655">
+                        <Ellipse.Effect>
+                            <BlurEffect Radius="99"/>
+                        </Ellipse.Effect>
+                    </Ellipse>
+                    <Ellipse Margin="382,155.2,51.2,199.6" Fill="Black" Opacity="0.655">
+                        <Ellipse.Effect>
+                            <BlurEffect Radius="99"/>
+                        </Ellipse.Effect>
+                    </Ellipse>
+                    <Ellipse Margin="240.4,264.4,279.2,90.4" Fill="Black" Opacity="0.655">
+                        <Ellipse.Effect>
+                            <BlurEffect Radius="99"/>
+                        </Ellipse.Effect>
+                    </Ellipse>
+                    <Ellipse Margin="514.4,10,10,414.4" Fill="Black" Opacity="0.655">
+                        <Ellipse.Effect>
+                            <BlurEffect Radius="99"/>
+                        </Ellipse.Effect>
+                    </Ellipse>
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>

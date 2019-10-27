@@ -1,0 +1,13 @@
+﻿<Window x:Class="Diagnostico_Paciente.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diagnostico_Paciente"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="254.279" Width="541.455" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Black">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,0,0,19.197" TextWrapping="Wrap" VerticalAlignment="Bottom" TextAlignment="Center" Foreground="White" FontSize="36"><Run Text="Cargando"/><Run Text="..."/></TextBlock>
+        <Image HorizontalAlignment="Center" Height="177.199" Margin="0,10,0,0" VerticalAlignment="Top" Width="315.645" Source="Resources/Imagenes/Small/Small_HOptaclinAq.png"/>
+    </Grid>
+</Window>
