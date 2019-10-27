@@ -1,0 +1,33 @@
+﻿<Window x:Class="Optaclin.NCita"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Optaclin"
+        mc:Ignorable="d"
+        Title="NCita" Height="413.891" Width="654.8" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Nueva Cita" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" Foreground="#FF507CF1" FontFamily="Constantia" FontSize="48" Height="72"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,87,0,0" TextWrapping="Wrap" Text="Dia de Cita:" VerticalAlignment="Top" FontFamily="Georgia" FontSize="20" Foreground="#FF507CF1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="215,93,0,0" TextWrapping="Wrap" Text="Nombres:" VerticalAlignment="Top" FontFamily="Georgia" FontSize="20" Foreground="#FF507CF1"/>
+        <TextBox x:Name="txtNombres" HorizontalAlignment="Left" Height="30" Margin="215,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" FontFamily="Georgia" FontSize="20" MaxLines="1"/>
+        <TextBox x:Name="txtApellidos" HorizontalAlignment="Left" Height="30" Margin="433,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Georgia" FontSize="20" MaxLines="1"/>
+        <TextBox x:Name="txtCorreoE" HorizontalAlignment="Left" Height="30" Margin="215,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="418" FontFamily="Georgia" FontSize="20" MaxLines="1"/>
+        <TextBox x:Name="txtMotivoDeCita" HorizontalAlignment="Left" Height="30" Margin="215,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="418" FontFamily="Georgia" FontSize="20" MaxLines="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="433,93,0,0" TextWrapping="Wrap" Text="Apellidos:" VerticalAlignment="Top" FontFamily="Georgia" FontSize="20" Foreground="#FF507CF1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="215,159,0,0" TextWrapping="Wrap" Text="Correo electronico:" VerticalAlignment="Top" FontFamily="Georgia" FontSize="20" Foreground="#FF507CF1"/>
+        <Button Content="Guardar Cita" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="176" FontSize="18" Click="Button_Click_1" Height="53"/>
+        <Calendar x:Name="calendario" HorizontalAlignment="Left" Height="166" Margin="10,115,0,0" VerticalAlignment="Top" Width="182"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,296,0,0" TextWrapping="Wrap" Text="Hora de la cita:" VerticalAlignment="Top" FontFamily="Georgia" FontSize="20" Foreground="#FF507CF1"/>
+        <TextBox x:Name="txtHora" HorizontalAlignment="Left" Height="30" Margin="10,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" FontFamily="Georgia" FontSize="20" MaxLines="1" TextAlignment="Center" Text="00" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="215,219,0,0" TextWrapping="Wrap" Text="Motivo de cita:" VerticalAlignment="Top" FontFamily="Georgia" FontSize="20" Foreground="#FF507CF1"/>
+        <TextBox x:Name="txtMinutos" HorizontalAlignment="Left" Height="30" Margin="85,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" FontFamily="Georgia" FontSize="20" MaxLines="1" TextAlignment="Center" Text="00" IsEnabled="False"/>
+        <ComboBox x:Name="CBT" HorizontalAlignment="Left" Height="30" Margin="154,321,0,0" VerticalAlignment="Top" Width="56" SelectedIndex="0" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="73,321,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" FontFamily="Georgia" FontSize="20" Foreground="#FF507CF1" Height="30" Width="12" TextAlignment="Center"/>
+        <Button x:Name="UPH" Content="&#xE098;" HorizontalAlignment="Left" Height="15" Margin="50,321,0,0" VerticalAlignment="Top" Width="23" FontFamily="Segoe MDL2 Assets"/>
+        <Button x:Name="DWH" Content="&#xE099;" HorizontalAlignment="Left" Height="15" Margin="50,336,0,0" VerticalAlignment="Top" Width="23" FontFamily="Segoe MDL2 Assets"/>
+        <Button x:Name="UPM" Content="&#xE098;" HorizontalAlignment="Left" Height="15" Margin="125,321,0,0" VerticalAlignment="Top" Width="23" FontFamily="Segoe MDL2 Assets"/>
+        <Button x:Name="DWM" Content="&#xE099;" HorizontalAlignment="Left" Height="15" Margin="125,336,0,0" VerticalAlignment="Top" Width="23" FontFamily="Segoe MDL2 Assets"/>
+
+    </Grid>
+</Window>

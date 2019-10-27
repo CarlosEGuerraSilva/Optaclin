@@ -1,0 +1,15 @@
+﻿<Window x:Class="Optaclin.Ajustes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Optaclin"
+        mc:Ignorable="d"
+        Title="Ajustes" Height="221.445" Width="727.878" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Guardar" HorizontalAlignment="Right" Height="37" Margin="0,0,9.6,10" VerticalAlignment="Bottom" Width="129" Click="Button_Click"/>
+        <TextBox x:Name="routevisual" Height="41" Margin="10,49,9.6,0" VerticalAlignment="Top" FontSize="24" MaxLines="1"/>
+        <TextBlock Height="39" Margin="10,10,9.6,0" TextWrapping="Wrap" Text="Herramientas: Diagnóstico" VerticalAlignment="Top" FontSize="24"/>
+
+    </Grid>
+</Window>
